@@ -50,10 +50,12 @@
 **Result:**
 
 原圖:
-![old](https://user-images.githubusercontent.com/63309875/228558197-3de1e759-e2ab-4be3-ae14-ecff34b73a73.gif)
+<img src="https://user-images.githubusercontent.com/63309875/228558197-3de1e759-e2ab-4be3-ae14-ecff34b73a73.gif" width="250" height="250"/>
+
 
 做完 MTB 後:
-![new](https://user-images.githubusercontent.com/63309875/228558225-aa7d527d-e1b2-4d16-a6d9-49f317d02474.gif)
+<img src="https://user-images.githubusercontent.com/63309875/228558225-aa7d527d-e1b2-4d16-a6d9-49f317d02474.gif" width="250" height="250"/>
+
 
 
 
