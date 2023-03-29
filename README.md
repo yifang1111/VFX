@@ -118,10 +118,17 @@ ____________________________________________________________
 ### (3) Tone Mapping Algorithm
 我們有實作 Global Tone Mapping, 並與其他三種方法做比較：Mantiuk, Drago, or Reinhard
 
-(a) Global
+1. Global
 
-- 場景ㄧ：森林系館走廊（左圖為 Debevec, 右圖為 Robertson）
-- 場景二：森林系館草地（左圖為 Debevec, 右圖為 Robertson）
+- 場景ㄧ：森林系館走廊（左圖為 Debevec $\gamma=0.6$, 右圖為 Robertson $\gamma=2.0$）
+
+<img src="https://i.imgur.com/8rTBgbc.jpg" width="400px"> <img src="https://i.imgur.com/gY8PdrP.jpg" width="400px">
+
+
+- 場景二：森林系館草地（左圖為 Debevec $\gamma=0.6$, 右圖為 Robertson  $\gamma=2.0$ ）
+
+<img src="https://i.imgur.com/NxLHvpW.jpg" width="400px"> <img src="https://i.imgur.com/EANDxVX.jpg" width="400px">
+
 
 (b) OpenCV: Mantiuk
 
