@@ -47,7 +47,7 @@
 
 我們實做了兩種方法：Debevec 和 Robertson.
 
-### (1) MTB Alignment
+### (1) MTB Alignment **（加分）**
 **Introduction:**
 1. 先將圖片轉成灰階
 2. 取第一張圖片作為校正參考點，每次取兩張照片依序做 alignment
