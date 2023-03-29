@@ -99,8 +99,10 @@ $$\ln E_i = \frac{\sum\limits_{j=1}^P w(Z_{i,j}) (g(Z_{i,j})- \ln \triangle  t_j
 
 給定 Sample $Z$ 和快門速度 $\triangle  t_j$，使用以下步驟求出 $E_i$ 和 $g(Z_{i,j})$：
 
-1. 假設 $g(Z_{i,j})$ 已知，使用以下公式求出 $E_i$： $$E_i = \frac{\sum_j w(Z_{i,j})g(Z_{i,j}) \triangle  t_j }{\sum_j w(Z_{i,j})\triangle  t^2_j}$$
-2. 假設 $E_i$ 已知，使用以下公式求出 $g(Z_{i,j})$：$$g(m) = \frac{1}{|E_m|} \sum_{i,j \in E_m} E_i \triangle  t_j$$ $$g(128) = 1$$
+1. 假設 $g(Z_{i,j})$ 已知，使用以下公式求出 $E_i$：
+$$E_i = \frac{\sum_j w(Z_{i,j})g(Z_{i,j}) \triangle  t_j }{\sum_j w(Z_{i,j})\triangle  t^2_j}$$
+2. 假設 $E_i$ 已知，使用以下公式求出 $g(Z_{i,j})$：
+$$g(m) = \frac{1}{|E_m|} \sum_{i,j \in E_m} E_i \triangle  t_j$$ $$g(128) = 1$$
 3. 重複 1. and 2. 直到數值收斂。
 
 
