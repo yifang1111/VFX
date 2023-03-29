@@ -83,7 +83,7 @@ def run_Robertson(img_list, ln_exposure_times, data_name, hdr_method):
     #show cmap
     plt.imshow(np.log(cv.cvtColor(np.float32(hdr), cv.COLOR_BGR2GRAY)), cmap='jet')
     plt.colorbar()
-    plt.savefig(f'{prefix}/{data_name}_cmap.jpg''.jpg')
+    plt.savefig(f'{prefix}/{data_name}_cmap''.jpg')
     
     #show curve
     plt.clf()
