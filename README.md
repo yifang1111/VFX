@@ -75,7 +75,7 @@ $$O=\sum^N_{i=1}\sum^P_{j=1} \{ w(Z_{i,j}) \[ g(Z_{i,j}-\ln E_i - \ln \triangle 
 3. 解 Sparse linear system 以找出目標函式 $O$ 的最佳解。
 4. 利用解出的 Response curve $g(Z_{i,j})$，去除噪點並獲得 Radiance map. 
  
-$$\ln E_i = \frac{\sum^P_{j=1} w(Z_{i,j}) (g(Z_{i,j})- \ln \triangle  t_j )}{\sum^P_{j=1} w(Z_{i,j})} $$
+$$\ln E_i = \frac{\sum\limits_{j=1}^P w(Z_{i,j}) (g(Z_{i,j})- \ln \triangle  t_j )}{\sum\limits_{j=1}^P w(Z_{i,j})} $$
 
 $$\ln E_i = \frac{\sum^{P}_{j=1} w(Z_{i,j}) (g(Z_{i,j})- \ln \triangle  t_j )}{\sum^{P}_{j=1} w(Z_{i,j})} $$
 
