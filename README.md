@@ -178,7 +178,17 @@ ____________________________________________________________
 
 <img src="https://i.imgur.com/vO4sgVi.jpg" width="400px"> <img src="https://i.imgur.com/QiRHABN.jpg" width="400px">
 
-
+**比較：**
+| Method | Global | Mantiuk | Drago | Reinhard |
+| --------| -------- | -------- | -------- | -------- |
+| Debevec | <img src="https://i.imgur.com/8rTBgbc.jpg" alt="" width="150">  | <img src="https://i.imgur.com/QvkwxYF.jpg" alt="" width="150">  | <img src="https://i.imgur.com/R8Xn1Fg.jpg" alt="" width="150">  | <img src="https://i.imgur.com/sC3ZZUY.jpg" alt="" width="150">    |
+| Robertson | <img src="https://i.imgur.com/gY8PdrP.jpg" alt="" width="150">  | <img src="https://i.imgur.com/bnrH0wQ.jpg" alt="" width="150">  | <img src="https://i.imgur.com/3dGbDjZ.jpg" alt="" width="150">  | <img src="https://i.imgur.com/06nMKS5.jpg" alt="" width="150">    |
+ 
+ 
+| Method | Global | Mantiuk | Drago | Reinhard |
+| -------- | -------- | -------- | -------- | -------- |
+| Debevec | <img src="https://i.imgur.com/NxLHvpW.jpg" alt="" width="150">  | <img src="https://i.imgur.com/C8dd9mM.jpg" alt="" width="150">  | <img src="https://i.imgur.com/5cfrlDq.jpg" alt="" width="150">  | <img src="https://i.imgur.com/vO4sgVi.jpg" alt="" width="150">    |
+| Robertson | <img src="https://i.imgur.com/EANDxVX.jpg" alt="" width="150">  | <img src="https://i.imgur.com/UUUALLK.jpg" alt="" width="150">  | <img src="https://i.imgur.com/LaRfTek.jpg" alt="" width="150">  | <img src="https://i.imgur.com/QiRHABN.jpg" alt="" width="150">    |
 
 ## 6 Summary
 
