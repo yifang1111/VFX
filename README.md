@@ -144,15 +144,20 @@ ____________________________________________________________
 (b) OpenCV: Mantiuk
 
 - 場景ㄧ：森林系館走廊（左圖為 Debevec Mantiuk, 右圖為 Robertson Mantiuk ）
+
+<img src="https://i.imgur.com/QvkwxYF.jpg" width="400px"> <img src="https://i.imgur.com/bnrH0wQ.jpg" width="400px">
+
+
 - 場景二：森林系館草地（左圖為 Debevec Mantiuk, 右圖為 Robertson Mantiuk）
 
-<img src="https://i.imgur.com/8rTBgbc.jpg" width="400px"> <img src="https://i.imgur.com/gY8PdrP.jpg" width="400px">
+<img src="https://i.imgur.com/C8dd9mM.jpg" width="400px"> <img src="https://i.imgur.com/UUUALLK.jpg" width="400px">
 
 (c) OpenCV: Drago
 
 - 場景ㄧ：森林系館走廊（左圖為 Debevec Drago, 右圖為 Robertson Drago）
 
-<img src="https://i.imgur.com/T6f2Q3X.jpg" width="400px"> <img src="https://i.imgur.com/8WhJW0g.jpg" width="400px">
+
+<img src="https://i.imgur.com/R8Xn1Fg.jpg" width="400px"> <img src="https://i.imgur.com/3dGbDjZ.jpg" width="400px">
 
 - 場景二：森林系館草地（左圖為 Debevec Drago, 右圖為 Robertson Drago）
 
@@ -172,7 +177,6 @@ ____________________________________________________________
 - 場景二：森林系館草地（左圖為 Debevec Reinhard, 右圖為 Robertson Reinhard）
 
 <img src="https://i.imgur.com/vO4sgVi.jpg" width="400px"> <img src="https://i.imgur.com/QiRHABN.jpg" width="400px">
-
 
 
 
