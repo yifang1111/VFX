@@ -104,14 +104,13 @@ $$g(m) = \frac{1}{|E_m|} \sum_{i,j \in E_m} E_i \triangle  t_j$$ $$g(128) = 1$$
 
 
 
-
-
 **Result:**
 
-
-- Radiance Map 
+<img src="https://i.imgur.com/EKFDOyM.jpg" width="400px"> <img src="https://i.imgur.com/RxrGTv9.jpg" width="400px"> 
 
 - Response Curve:
+
+<img src="https://i.imgur.com/5tauvhy.jpg" width="400px"> <img src="https://i.imgur.com/QSWTr2q.jpg" width="400px"> 
 
 ### Tone Mapping Algorithm
 我們有嘗試五種方法做比較：Global, Mantiuk, Drago, Durand, or Reinhard
