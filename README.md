@@ -161,8 +161,9 @@ ____________________________________________________________
 
 我們完成了以下work:
 - 實作 MTB algorithm
-- 實作 Debevec、Robertson method
-- 實作 Tone mapping 的 Global Opertor
+- 實作 Debevec method
+- **（加分）** 實作 Robertson method 
+- **（加分）** 實作 Tone mapping 的 Global Opertor
 
 
 
