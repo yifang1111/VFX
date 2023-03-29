@@ -146,7 +146,6 @@ ____________________________________________________________
 - 場景二：森林系館草地（左圖為 Debevec, 右圖為 Robertson）
 
 (c) OpenCV: Drago
-使用OpenCV內建tone mapping的Drago method
 
 - 場景ㄧ：森林系館走廊（左圖為 Debevec, 右圖為 Robertson）
 - 場景二：森林系館草地（左圖為 Debevec, 右圖為 Robertson）
