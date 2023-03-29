@@ -91,14 +91,13 @@ $$\ln E_i = \frac{\sum\limits_{j=1}^P w(Z_{i,j}) (g(Z_{i,j})- \ln \triangle  t_j
 
 **Result:**
 
-- Radiance Map 
+- Radiance Map:
 
-<img src="https://i.imgur.com/28rKuex.jpg" width="400px"> <img src="https://i.imgur.com/FU2u3uW.jpg" width="400px"> 
+<img src="https://i.imgur.com/vTAlhEP.jpg" width="400px"> <img src="https://i.imgur.com/jyguD0c.jpg" width="400px"> 
 
 - Response Curve:
 
 <img src="https://i.imgur.com/zbmIOzY.jpg" width="400px"> <img src="https://i.imgur.com/oMjyfZ5.jpg" width="400px"> 
-
 
 
 
@@ -117,6 +116,8 @@ $$g(m) = \frac{1}{|E_m|} \sum_{i,j \in E_m} E_i \triangle  t_j$$ $$g(128) = 1$$
 
 
 **Result:**
+
+- Radiance Map:
 
 <img src="https://i.imgur.com/EKFDOyM.jpg" width="400px"> <img src="https://i.imgur.com/RxrGTv9.jpg" width="400px"> 
 
