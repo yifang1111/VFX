@@ -81,11 +81,11 @@ $$\ln E_i = \frac{\sum\limits_{j=1}^P w(Z_{i,j}) (g(Z_{i,j})- \ln \triangle  t_j
 
 - Radiance Map 
 
-<img src="https://i.imgur.com/28rKuex.jpg" width="400px"><img src="https://i.imgur.com/FU2u3uW.jpg" width="400px"> 
+<img src="https://i.imgur.com/28rKuex.jpg" width="400px"> <img src="https://i.imgur.com/FU2u3uW.jpg" width="400px"> 
 
 - Response Curve:
 
-<img src="https://i.imgur.com/zbmIOzY.jpg" width="400px"><img  src="https://i.imgur.com/oMjyfZ5.jpg" width="400px"> 
+<img src="https://i.imgur.com/zbmIOzY.jpg" width="400px"> <img src="https://i.imgur.com/oMjyfZ5.jpg" width="400px"> 
 
 
 
