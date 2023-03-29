@@ -50,13 +50,15 @@
 ### (1) MTB Alignment
 **Introduction:**
 1. 先將圖片轉成灰階
-2. 取第一張圖片作為校正參考點，每次取兩張照片依序做alignment
-3. 使用multiscale的方式，將圖片縮小為1/32，根據x方向+-1及y方向+-1，做九個方向的shift，依以下方法找出兩張圖片差異最小的shift方向
-   - 計算threshold bitmap，以灰階影像的median值為threshold，大於為1，小於為0
-   - 計算exclusion bitmap，為了去除noise，在灰階影像median值+-4的位置設為0，其餘為1
-   - 透過固定一張圖片與另一張shift的圖片，兩者threshold bitmap做XOR計算，再與兩者的exclusion bitmap做AND計算，Bit counting出兩者之間的差異
-4. 每次scale up 2，再依前一個scale找出的shift，做新的九個方向的shift
-5. 找到原圖尺寸的shift，並且做crop，完成alignment
+2. 取第一張圖片作為校正參考點，每次取兩張照片依序做 alignment
+3. 使用 multiscale 的方式，將圖片縮小為 1/32，根據 x 方向+-1及 y 方向+-1，做九個方向的 shift，依以下方法找出兩張圖片差異最小的 shift 方向
+   - 計算 threshold bitmap，以灰階影像的 median 值為 threshold，大於為1，小於為0
+   - 計算 exclusion bitmap，為了去除 noise，在灰階影像 median 值 +-4 的位置設為 0，其餘為 1
+   - 透過固定一張圖片與另一張 shift 的圖片，兩者 threshold bitmap 做XOR計算，再與兩者的 exclusion bitmap 做AND計算，Bit counting出兩者之間的差異。
+4. 每次 scale up by 2，再依前一個 scale 找出的 shift，做新的九個方向的 shift
+5. 找到原圖尺寸的 shift，並且做 crop，完成 alignment.
+ 
+
 **Result:**
 
 原圖:
