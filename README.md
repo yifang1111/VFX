@@ -44,6 +44,8 @@
 
 ## 4. Implementation Detail
 
+我們實做了兩種方法：Debevec 和 Robertson.
+
 ### (1) MTB Alignment
 **Introduction:**
 
@@ -114,7 +116,7 @@ $$g(m) = \frac{1}{|E_m|} \sum_{i,j \in E_m} E_i \triangle  t_j$$ $$g(128) = 1$$
 
 ____________________________________________________________
 ### (3) Tone Mapping Algorithm
-我們有嘗試五種方法做比較：Global, Mantiuk, Drago, Durand, or Reinhard
+我們有實作 Global Tone Mapping, 並與其他三種方法做比較：Mantiuk, Drago, or Reinhard
 
 (a) Global
 
