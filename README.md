@@ -44,7 +44,7 @@
 
 ## 4. Implementation Detail
 
-### MTB Alignment
+### (1) MTB Alignment
 **Introduction:**
 
 **Result:**
@@ -59,8 +59,8 @@
 
 
 
-
-### HDR Algorithm
+____________________________________________________________
+### (2) HDR Algorithm
 #### (a) Debevec's method
 
 **Introduction:**
@@ -112,26 +112,27 @@ $$g(m) = \frac{1}{|E_m|} \sum_{i,j \in E_m} E_i \triangle  t_j$$ $$g(128) = 1$$
 
 <img src="https://i.imgur.com/5tauvhy.jpg" width="400px"> <img src="https://i.imgur.com/QSWTr2q.jpg" width="400px"> 
 
-### Tone Mapping Algorithm
+____________________________________________________________
+### (3) Tone Mapping Algorithm
 我們有嘗試五種方法做比較：Global, Mantiuk, Drago, Durand, or Reinhard
 
-1. Global
+(a) Global
 
 - 場景ㄧ：森林系館走廊（左圖為 Debevec, 右圖為 Robertson）
 - 場景二：森林系館草地（左圖為 Debevec, 右圖為 Robertson）
 
-2. OpenCV: Mantiuk
+(b) OpenCV: Mantiuk
 
 - 場景ㄧ：森林系館走廊（左圖為 Debevec, 右圖為 Robertson）
 - 場景二：森林系館草地（左圖為 Debevec, 右圖為 Robertson）
 
-3. OpenCV: Drago
+(c) OpenCV: Drago
 使用OpenCV內建tone mapping的Drago method
 
 - 場景ㄧ：森林系館走廊（左圖為 Debevec, 右圖為 Robertson）
 - 場景二：森林系館草地（左圖為 Debevec, 右圖為 Robertson）
 
-4. OpenCV: Reinhard
+(d) OpenCV: Reinhard
 
 - 場景ㄧ：森林系館走廊（左圖為 Debevec, 右圖為 Robertson）
 - 場景二：森林系館草地（左圖為 Debevec, 右圖為 Robertson）
