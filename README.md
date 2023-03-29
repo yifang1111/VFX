@@ -56,7 +56,7 @@
    - 計算exclusion bitmap，為了去除noise，在灰階影像median值+-4的位置設為0，其餘為1
    - 透過固定一張圖片與另一張shift的圖片，兩者threshold bitmap做XOR計算，再與兩者的exclusion bitmap做AND計算，Bit counting出兩者之間的差異
 4. 每次scale up 2，再依前一個scale找出的shift，做新的九個方向的shift
-5. 找到原圖尺寸的shift，並且做crop，完成alignment，
+5. 找到原圖尺寸的shift，並且做crop，完成alignment
 **Result:**
 
 原圖:
