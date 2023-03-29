@@ -50,10 +50,10 @@
 **Result:**
 
 原圖:
-![](https://i.imgur.com/hf7HgCL.gif)
+![Original](https://i.imgur.com/hf7HgCL.gif)
 
 做完 MTB 後:
-![](https://i.imgur.com/csUdeyk.gif)
+![MTB alignment](https://i.imgur.com/csUdeyk.gif)
 
 
 ### HDR Algorithm
