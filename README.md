@@ -100,7 +100,7 @@ $$\ln E_i = \frac{\sum\limits_{j=1}^P w(Z_{i,j}) (g(Z_{i,j})- \ln \triangle  t_j
 
 
 
-#### (b) Robertson's method
+#### (b) Robertson's method **（加分）**
 **Introduction:**
 對 Response curve $g$ 沒有任何假設，並且取照片中所有的點作為 Sample $Z$。
 
@@ -123,10 +123,10 @@ $$g(m) = \frac{1}{|E_m|} \sum_{i,j \in E_m} E_i \triangle  t_j$$ $$g(128) = 1$$
 <img src="https://i.imgur.com/5tauvhy.jpg" width="400px"> <img src="https://i.imgur.com/QSWTr2q.jpg" width="400px"> 
 
 ____________________________________________________________
-### (3) Tone Mapping Algorithm
+### (3) Tone Mapping Algorithm 
 我們有實作 Global Tone Mapping, 並與其他三種方法做比較：Mantiuk, Drago, or Reinhard
 
-1. Global
+1. Global **（加分）**
 
 - 場景ㄧ：森林系館走廊（左圖為 Debevec $\gamma=0.6$, 右圖為 Robertson $\gamma=2.0$）
 
