@@ -155,7 +155,5 @@ ____________________________________________________________
 ## 7. Reproduce Steps
 1. Read https://www.csie.ntu.edu.tw/~cyy/courses/vfx/23spring/assignments/proj1/
 2. Know Paul Debevec's method from week 3.
-3. Download sample test images from [here](http://www.mpii.mpg.de/resources/hdr/calibration/exposures.tgz) or [here](http://www.debevec.org/Research/HDR/SourceImages/Memorial_SourceImages.zip) (hdr [here](http://www.debevec.org/Research/HDR/memorial.hdr)).
+3. Download our images from [here]()
 
-4. Download our images from [here]()
-5. TBD
