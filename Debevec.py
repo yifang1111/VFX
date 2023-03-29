@@ -147,7 +147,9 @@ def run_Debevec(images, ln_exposure_times, data_name, hdr_method):
     cmap = np.float32(cv2.cvtColor(np.uint8(hdr_img), cv2.COLOR_BGR2GRAY)/255.)
     cmap = colorize(cmap)
     plt.figure()
-    plt.imsave(f'{prefix}/{data_name}_cmap.jpg', np.uint8(cmap*255.), cmap="jet")
+    plt.imshow(np.uint8(cmap*255.), cmap='jet')
+    plt.colorbar()
+    plt.savefig(f'{prefix}/{data_name}_cmap''.jpg')
 
     # Show curve
     plt.figure()

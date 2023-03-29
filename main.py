@@ -29,8 +29,8 @@ def load_data(data_name):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description = 'High Dynamic Range Imaging')
-    parser.add_argument('-data','--data_name', default = 'corridor', choices=['corridor','grass'])
-    parser.add_argument('-hdr','--hdr_method', default = 'Robertson', choices=['Debevec','Robertson'])
+    parser.add_argument('-data','--data_name', default = 'grass', choices=['corridor','grass'])
+    parser.add_argument('-hdr','--hdr_method', default = 'Debevec', choices=['Debevec','Robertson'])
     parser.add_argument('-g','--tonemap_global', default = True)
     parser.add_argument('-m','--tonemap_Mantiuk', default = True)
     parser.add_argument('-r','--tonemap_Reinhard', default = True)
