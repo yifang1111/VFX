@@ -51,10 +51,10 @@
 **Introduction:**
 1. 先將圖片轉成灰階
 2. 取第一張圖片作為校正參考點，每次取兩張照片依序做 alignment
-3. 使用 multiscale 的方式，將圖片縮小為 1/32，根據 x 方向+-1及 y 方向+-1，做九個方向的 shift，依以下方法找出兩張圖片差異最小的 shift 方向
+3. 使用 multiscale 的方式，將圖片縮小為 1/32，根據 x 方向 ±1 及 y 方向 ±1，做九個方向的 shift，依以下方法找出兩張圖片差異最小的 shift 方向
    - 計算 threshold bitmap，以灰階影像的 median 值為 threshold，大於為1，小於為0
-   - 計算 exclusion bitmap，為了去除 noise，在灰階影像 median 值 +-4 的位置設為 0，其餘為 1
-   - 透過固定一張圖片與另一張 shift 的圖片，兩者 threshold bitmap 做XOR計算，再與兩者的 exclusion bitmap 做AND計算，Bit counting出兩者之間的差異。
+   - 計算 exclusion bitmap，為了去除 noise，在灰階影像 median 值 ±4 的位置設為 0，其餘為 1
+   - 透過固定一張圖片與另一張 shift 的圖片，兩者 threshold bitmap 做 XOR 計算，再與兩者的 exclusion bitmap 做AND計算，Bit counting出兩者之間的差異。
 4. 每次 scale up by 2，再依前一個 scale 找出的 shift，做新的九個方向的 shift
 5. 找到原圖尺寸的 shift，並且做 crop，完成 alignment.
  
