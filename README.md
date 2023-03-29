@@ -70,8 +70,6 @@
 
 $$O=\sum^N_{i=1}\sum^P_{j=1} \{w(Z_{i,j})[g(Z_{i,j}-\ln E_i - \ln \triangle  t_j )]\}^2 + \lambda \sum^{Z_{max}-1}_{Z_{min}+1} [w(z)g''(z)]^2 $$ 
 
-$$O=\sum\limit_{i=1}^N\sum\limit_{j=1}^P \{ w(Z_{i,j}) \[ g(Z_{i,j}-\ln E_i - \ln \triangle  t_j ) \] \}^2 + \lambda \sum^{Z_{max}-1}_{Z_{min}+1} [w(z)g''(z)]^2 $$ 
-
 3. 解 Sparse linear system 以找出目標函式 $O$ 的最佳解。
 4. 利用解出的 Response curve $g(Z_{i,j})$，去除噪點並獲得 Radiance map. 
  
