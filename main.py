@@ -35,7 +35,9 @@ if __name__ == "__main__":
     parser.add_argument('-m','--tonemap_Mantiuk', default = True)
     parser.add_argument('-r','--tonemap_Reinhard', default = True)
     parser.add_argument('-d','--tonemap_Drago', default = True)
-    parser.add_argument('--gamma', default = 0.6, choices=[0.6,2.0])
+    ## Tonemap global
+    parser.add_argument('-a', default = 0.9, type=float)
+    parser.add_argument('-l_white', default = 1.7, type=float)
 
     args = parser.parse_args()
 
@@ -52,7 +54,7 @@ if __name__ == "__main__":
         print("Run Robertson")
         hdr = Robertson.run_Robertson(images, ln_exposure_times, args.data_name, args.hdr_method)
     
-    tonemap(args,hdr)
+    tonemap(args, hdr)
 
 
 

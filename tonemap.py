@@ -8,8 +8,9 @@ def compute_lm(lw,a, sigma):
     lm = a*(lw)/lw_bar
     return lm
 
-def globalTonemap(hdr_image, a=10, sigma=0.0000001, l_white=1.5):
+def globalTonemap(hdr_image, a=0.7, l_white=1.7):
     ## l_white: 設定超過即過曝的數值
+    sigma=0.0000001
     lw = hdr_image
     lm = compute_lm(lw, a, sigma)
     print( np.min(lm)  )
@@ -49,7 +50,7 @@ def tonemap(args,hdr_img):
     # Gamma tone mapping
     if args.tonemap_global:
         # Gamma = np.uint8(globalTonemap(hdr_img, args.gamma))
-        Global = np.uint8(globalTonemap(hdr_img))
+        Global = np.uint8(globalTonemap(hdr_img, args.a, args.l_white))
         cv2.imwrite(f'{prefix}/{args.data_name}_gamma_tomemapping.jpg', Global)
 
     # Mantiuk tone mapping
