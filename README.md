@@ -140,16 +140,16 @@ $$L_m(x,y) = \frac{a}{\bar{L}_w} L_w(x,y)$$
 $$\bar{L}_w = exp(\frac{1}{N} \sum\limits_{x, y}\log(\delta+ L_w(x, y) )  $$
 
 
-$a=0.7$, $L_{white}=2.0$, $\delta=0.0000001$ 
+$a=0.9$, $L_{white}=4.0$, $\delta=0.0000001$ 
 
 - 場景ㄧ：森林系館走廊（左圖為 Debevec , 右圖為 Robertson）
 
-<img src="https://i.imgur.com/aOU09zv.jpg" width="400px"> <img src="" width="400px">
+<img src="https://i.imgur.com/aOU09zv.jpg" width="400px"> <img src="https://i.imgur.com/jInrsqw.jpg" width="400px">
+
 
 - 場景ㄧ：森林系館草地（左圖為 Debevec , 右圖為 Robertson）
 
-<img src="https://i.imgur.com/pdvcera.jpg" width="400px"> <img src="" width="400px">
-
+<img src="https://i.imgur.com/pdvcera.jpg" width="400px"> <img src="https://i.imgur.com/EI5T9vo.jpg" width="400px">
 
 (b) OpenCV: Mantiuk
 
@@ -194,12 +194,14 @@ $a=0.7$, $L_{white}=2.0$, $\delta=0.0000001$
 | Method | Global | Mantiuk | Drago | Reinhard |
 | --------| -------- | -------- | -------- | -------- |
 | Debevec | <img src="https://i.imgur.com/aOU09zv.jpg" alt="" width="150">  | <img src="https://i.imgur.com/QvkwxYF.jpg" alt="" width="150">  | <img src="https://i.imgur.com/R8Xn1Fg.jpg" alt="" width="150">  | <img src="https://i.imgur.com/sC3ZZUY.jpg" alt="" width="150">    |
-| Robertson | 123 <img src="" alt="" width="150">  | <img src="https://i.imgur.com/bnrH0wQ.jpg" alt="" width="150">  | <img src="https://i.imgur.com/3dGbDjZ.jpg" alt="" width="150">  | <img src="https://i.imgur.com/06nMKS5.jpg" alt="" width="150">    |
- 
+| Robertson | <img src="https://i.imgur.com/jInrsqw.jpg" alt="" width="150">  | <img src="https://i.imgur.com/bnrH0wQ.jpg" alt="" width="150">  | <img src="https://i.imgur.com/3dGbDjZ.jpg" alt="" width="150">  | <img src="https://i.imgur.com/06nMKS5.jpg" alt="" width="150">    |
+
+
 | Method | Global | Mantiuk | Drago | Reinhard |
 | -------- | -------- | -------- | -------- | -------- |
 | Debevec  | <img src="https://i.imgur.com/pdvcera.jpg" alt="" width="150">  | <img src="https://i.imgur.com/C8dd9mM.jpg" alt="" width="150">  | <img src="https://i.imgur.com/5cfrlDq.jpg" alt="" width="150">  | <img src="https://i.imgur.com/vO4sgVi.jpg" alt="" width="150">    |
-| Robertson | 123 <img src="" alt="" width="150">  | <img src="https://i.imgur.com/UUUALLK.jpg" alt="" width="150">  | <img src="https://i.imgur.com/LaRfTek.jpg" alt="" width="150">  | <img src="https://i.imgur.com/QiRHABN.jpg" alt="" width="150">    |
+| Robertson | <img src="https://i.imgur.com/EI5T9vo.jpg" alt="" width="150">  | <img src="https://i.imgur.com/UUUALLK.jpg" alt="" width="150">  | <img src="https://i.imgur.com/LaRfTek.jpg" alt="" width="150">  | <img src="https://i.imgur.com/QiRHABN.jpg" alt="" width="150">    |
+
 
 ## 6. Summary
 
@@ -207,16 +209,16 @@ $a=0.7$, $L_{white}=2.0$, $\delta=0.0000001$
 - **（加分）** 實作 MTB algorithm
 - 實作 Debevec method
 - **（加分）** 實作 Robertson method 
-- **（加分）** 實作 Tone mapping 的 Global Operator
+- **（加分）** 實作 Tone mapping 的 Global Opertor
 
 
-原圖 vs 最後成果（）： 
-可以看到走廊盡頭的暗部，經過 Tone mapping 後細節與輪廓有被增強。
+**原圖 (左) vs 最後成果（右）：**
+使用 Debevec + Global Tone Mapping 後，可以看到走廊盡頭的暗部，經過 Tone mapping 後細節與輪廓有被增強。
 <img src="https://i.imgur.com/VZohd2R.jpg" width="400px">
  
  
-原圖 vs 最後成果（）：
-可以看到原本過曝的薯條玩偶，經過 Tone mapping 後細節與輪廓有被增強。
+**原圖 (左) vs 最後成果（右）：**
+使用 Robertson + Mantiuk Tone Mapping 後，可以看到原本過曝的薯條玩偶，經過 Tone mapping 後細節與輪廓有被增強。
 <img src="https://i.imgur.com/fe7pkpk.jpg" width="400px">
 
 
