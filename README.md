@@ -207,7 +207,7 @@ $a=0.7$, $L_{white}=2.0$, $\delta=0.0000001$
 - **（加分）** 實作 MTB algorithm
 - 實作 Debevec method
 - **（加分）** 實作 Robertson method 
-- **（加分）** 實作 Tone mapping 的 Global Opertor
+- **（加分）** 實作 Tone mapping 的 Global Operator
 
 
 
