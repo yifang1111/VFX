@@ -13,33 +13,19 @@ def globalTonemap(hdr_image, a=0.7, l_white=1.7):
     sigma=0.0000001
     lw = hdr_image
     lm = compute_lm(lw, a, sigma)
-    print( np.min(lm)  )
-    print( np.max(lm)  )
-    #print( np.min(1 + ((lm) / (l_white)**2 )))
-    #print( np.max(1 + ((lm) / (l_white)**2 )))
-    
+
     numerator = lm * (1 + lm/(l_white)**2) 
     denominator = 1 + lm
     ld = numerator / denominator
-    print(np.max(ld))
+
+    # ld = gamma_correction(ld, gamma=1.2)
     ldr = (ld * 255).astype(int)
+        
     return ldr
 
-# def get_lm(lw,a, sigma):
-#     lw_bar = np.exp(np.average(np.log(sigma+lw)))
-#     lm = a*(lw)/lw_bar
-#     return lm
+def gamma_correction(id, gamma):
+    return cv2.pow(id, 1.0/gamma)
 
-# def get_ld_global(lm,l_white):
-#     return lm * (1 + ((lm) / (l_white) / (l_white))) / (1 + lm)
-
-# def globalTonemap(hdr_image, a=1, sigma=0.0000001, l_white=1.5):
-#     lw = hdr_image
-#     lm = get_lm(lw, a, sigma)
-#     # ld = get_ld_global(lm, l_white)
-#     ld = lm / (1 + lm)
-#     ldr = (ld * 255).astype(int)
-#     return ldr
 
 
 def tonemap(args,hdr_img):
@@ -51,7 +37,7 @@ def tonemap(args,hdr_img):
     if args.tonemap_global:
         # Gamma = np.uint8(globalTonemap(hdr_img, args.gamma))
         Global = np.uint8(globalTonemap(hdr_img, args.a, args.l_white))
-        cv2.imwrite(f'{prefix}/{args.data_name}_gamma_tomemapping.jpg', Global)
+        cv2.imwrite(f'{prefix}/{args.data_name}_global_tomemapping.jpg', Global)
 
     # Mantiuk tone mapping
     if args.tonemap_Mantiuk:
