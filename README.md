@@ -127,18 +127,28 @@ $$g(m) = \frac{1}{|E_m|} \sum_{i,j \in E_m} E_i \triangle  t_j$$ $$g(128) = 1$$
 
 ____________________________________________________________
 ### (3) Tone Mapping Algorithm 
-我們有實作 Global Tone Mapping, 並與其他三種方法做比較：Mantiuk, Drago, or Reinhard
+我們有實作 Global Tone Mapping, 並與其他三種方法做比較：Mantiuk, Drago, or Reinhard.
 
-1. Global **（加分）**
+**1. Global Operator （加分）**
 
-- 場景ㄧ：森林系館走廊（左圖為 Debevec $\gamma=0.6$, 右圖為 Robertson $\gamma=2.0$）
+使用以下公式把 HDR Intensity $L_w$ 調整成 LDR Intensity $L_d$:
 
-<img src="https://i.imgur.com/8rTBgbc.jpg" width="400px"> <img src="https://i.imgur.com/gY8PdrP.jpg" width="400px">
+$$L_d(x,y) = \frac{ L_m(x,y)(1+\frac{L_m(x,y)}{L^2_{white}(x,y)}) }{1+L_m(x,y)}  $$
+
+$$L_m(x,y) = \frac{a}{\bar{L}_w} L_w(x,y)$$
+
+$$\bar{L}_w = exp(\frac{1}{N} \sum\limits_{x, y}\log(\delta+ L_w(x, y) )  $$
 
 
-- 場景二：森林系館草地（左圖為 Debevec $\gamma=0.6$, 右圖為 Robertson  $\gamma=2.0$ ）
+$a=0.7$, $L_{white}=2.0$, $\delta=0.0000001$ 
 
-<img src="https://i.imgur.com/NxLHvpW.jpg" width="400px"> <img src="https://i.imgur.com/EANDxVX.jpg" width="400px">
+- 場景ㄧ：森林系館走廊（左圖為 Debevec , 右圖為 Robertson）
+
+<img src="https://i.imgur.com/aOU09zv.jpg" width="400px"> <img src="" width="400px">
+
+- 場景ㄧ：森林系館草地（左圖為 Debevec , 右圖為 Robertson）
+
+<img src="https://i.imgur.com/pdvcera.jpg" width="400px"> <img src="" width="400px">
 
 
 (b) OpenCV: Mantiuk
@@ -155,6 +165,7 @@ ____________________________________________________________
 (c) OpenCV: Drago
 
 - 場景ㄧ：森林系館走廊（左圖為 Debevec Drago, 右圖為 Robertson Drago）
+
 
 
 <img src="https://i.imgur.com/R8Xn1Fg.jpg" width="400px"> <img src="https://i.imgur.com/3dGbDjZ.jpg" width="400px">
@@ -181,14 +192,14 @@ ____________________________________________________________
 **比較：**
 | Method | Global | Mantiuk | Drago | Reinhard |
 | --------| -------- | -------- | -------- | -------- |
-| Debevec | <img src="https://i.imgur.com/8rTBgbc.jpg" alt="" width="150">  | <img src="https://i.imgur.com/QvkwxYF.jpg" alt="" width="150">  | <img src="https://i.imgur.com/R8Xn1Fg.jpg" alt="" width="150">  | <img src="https://i.imgur.com/sC3ZZUY.jpg" alt="" width="150">    |
-| Robertson | <img src="https://i.imgur.com/gY8PdrP.jpg" alt="" width="150">  | <img src="https://i.imgur.com/bnrH0wQ.jpg" alt="" width="150">  | <img src="https://i.imgur.com/3dGbDjZ.jpg" alt="" width="150">  | <img src="https://i.imgur.com/06nMKS5.jpg" alt="" width="150">    |
+| Debevec | <img src="https://i.imgur.com/aOU09zv.jpg" alt="" width="150">  | <img src="https://i.imgur.com/QvkwxYF.jpg" alt="" width="150">  | <img src="https://i.imgur.com/R8Xn1Fg.jpg" alt="" width="150">  | <img src="https://i.imgur.com/sC3ZZUY.jpg" alt="" width="150">    |
+| Robertson | 123 <img src="" alt="" width="150">  | <img src="https://i.imgur.com/bnrH0wQ.jpg" alt="" width="150">  | <img src="https://i.imgur.com/3dGbDjZ.jpg" alt="" width="150">  | <img src="https://i.imgur.com/06nMKS5.jpg" alt="" width="150">    |
  
  
 | Method | Global | Mantiuk | Drago | Reinhard |
 | -------- | -------- | -------- | -------- | -------- |
-| Debevec | <img src="https://i.imgur.com/NxLHvpW.jpg" alt="" width="150">  | <img src="https://i.imgur.com/C8dd9mM.jpg" alt="" width="150">  | <img src="https://i.imgur.com/5cfrlDq.jpg" alt="" width="150">  | <img src="https://i.imgur.com/vO4sgVi.jpg" alt="" width="150">    |
-| Robertson | <img src="https://i.imgur.com/EANDxVX.jpg" alt="" width="150">  | <img src="https://i.imgur.com/UUUALLK.jpg" alt="" width="150">  | <img src="https://i.imgur.com/LaRfTek.jpg" alt="" width="150">  | <img src="https://i.imgur.com/QiRHABN.jpg" alt="" width="150">    |
+| Debevec  | <img src="https://i.imgur.com/pdvcera.jpg" alt="" width="110">  | <img src="https://i.imgur.com/C8dd9mM.jpg" alt="" width="150">  | <img src="https://i.imgur.com/5cfrlDq.jpg" alt="" width="150">  | <img src="https://i.imgur.com/vO4sgVi.jpg" alt="" width="150">    |
+| Robertson | 123 <img src="" alt="" width="150">  | <img src="https://i.imgur.com/UUUALLK.jpg" alt="" width="150">  | <img src="https://i.imgur.com/LaRfTek.jpg" alt="" width="150">  | <img src="https://i.imgur.com/QiRHABN.jpg" alt="" width="150">    |
 
 ## 6 Summary
 
