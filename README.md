@@ -41,7 +41,7 @@
 1. 讀取所有在指定路徑下的十張不同快門速度的圖片。
 2. 使用 MTB 做 Image Alignment。
 3. 重建 HDR 影像（Debevec or Robertson）
-4. 用 Tone mapping 輸出 LDR 影像（Global, Mantiuk, Drago, Durand, or Reinhard）
+4. 用 Tone mapping 輸出 LDR 影像（Global, Mantiuk, Drago, or Reinhard）
 
 ## 4. Implementation Detail
 
@@ -63,12 +63,12 @@
 
 原圖:
 
-<img src="https://user-images.githubusercontent.com/63309875/228558197-3de1e759-e2ab-4be3-ae14-ecff34b73a73.gif" width="300"/>
+<img src="https://user-images.githubusercontent.com/63309875/228558197-3de1e759-e2ab-4be3-ae14-ecff34b73a73.gif" width="300"/> <img src="https://user-images.githubusercontent.com/63309875/228779198-71e27456-cddb-4d7b-9d7e-cb6b565ba482.gif" width="300"/>
+
 
 做完 MTB 後，照片成功對齊:
 
-<img src="https://user-images.githubusercontent.com/63309875/228558225-aa7d527d-e1b2-4d16-a6d9-49f317d02474.gif" width="300"/>
-
+<img src="https://user-images.githubusercontent.com/63309875/228558225-aa7d527d-e1b2-4d16-a6d9-49f317d02474.gif" width="300"/> <img src="https://user-images.githubusercontent.com/63309875/228779249-7df876e7-da3a-4ab6-a3ef-039ad7d8ea1d.gif" width="300"/>
 
 
 ____________________________________________________________
