@@ -213,14 +213,16 @@ $a=0.9$, $L_{white}=4.0$, $\delta=0.0000001$
 
 
 **原圖 (左) vs 最後成果（右）：**
+
 使用 Debevec + Global Tone Mapping 後，可以看到走廊盡頭的暗部，經過 Tone mapping 後細節與輪廓有被增強。
-<img src="https://i.imgur.com/VZohd2R.jpg" width="400px">
- 
+
+<img src="https://i.imgur.com/VZohd2R.jpg" width="400px"> <img src="https://i.imgur.com/aOU09zv.jpg" width="400px"> 
  
 **原圖 (左) vs 最後成果（右）：**
-使用 Robertson + Mantiuk Tone Mapping 後，可以看到原本過曝的薯條玩偶，經過 Tone mapping 後細節與輪廓有被增強。
-<img src="https://i.imgur.com/fe7pkpk.jpg" width="400px">
 
+使用 Robertson + Mantiuk Tone Mapping 後，可以看到原本過曝的薯條玩偶，經過 Tone mapping 後細節與輪廓有被增強。
+
+<img src="https://i.imgur.com/fe7pkpk.jpg" width="400px"> <img src="https://i.imgur.com/UUUALLK.jpg" width="400px">
 
 
 
