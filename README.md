@@ -191,15 +191,11 @@ $a=0.7$, $L_{white}=2.0$, $\delta=0.0000001$
 
 **比較：**
 
-原圖： <img src="https://i.imgur.com/VZohd2R.jpg" width="200px">
-
 | Method | Global | Mantiuk | Drago | Reinhard |
 | --------| -------- | -------- | -------- | -------- |
 | Debevec | <img src="https://i.imgur.com/aOU09zv.jpg" alt="" width="150">  | <img src="https://i.imgur.com/QvkwxYF.jpg" alt="" width="150">  | <img src="https://i.imgur.com/R8Xn1Fg.jpg" alt="" width="150">  | <img src="https://i.imgur.com/sC3ZZUY.jpg" alt="" width="150">    |
 | Robertson | 123 <img src="" alt="" width="150">  | <img src="https://i.imgur.com/bnrH0wQ.jpg" alt="" width="150">  | <img src="https://i.imgur.com/3dGbDjZ.jpg" alt="" width="150">  | <img src="https://i.imgur.com/06nMKS5.jpg" alt="" width="150">    |
  
- 
-原圖：<img src="https://i.imgur.com/fe7pkpk.jpg" width="200px">
 | Method | Global | Mantiuk | Drago | Reinhard |
 | -------- | -------- | -------- | -------- | -------- |
 | Debevec  | <img src="https://i.imgur.com/pdvcera.jpg" alt="" width="150">  | <img src="https://i.imgur.com/C8dd9mM.jpg" alt="" width="150">  | <img src="https://i.imgur.com/5cfrlDq.jpg" alt="" width="150">  | <img src="https://i.imgur.com/vO4sgVi.jpg" alt="" width="150">    |
@@ -212,6 +208,16 @@ $a=0.7$, $L_{white}=2.0$, $\delta=0.0000001$
 - 實作 Debevec method
 - **（加分）** 實作 Robertson method 
 - **（加分）** 實作 Tone mapping 的 Global Operator
+
+
+原圖 vs 最後成果（）： 
+可以看到走廊盡頭的暗部，經過 Tone mapping 後細節與輪廓有被增強。
+<img src="https://i.imgur.com/VZohd2R.jpg" width="400px">
+ 
+ 
+原圖 vs 最後成果（）：
+可以看到原本過曝的薯條玩偶，經過 Tone mapping 後細節與輪廓有被增強。
+<img src="https://i.imgur.com/fe7pkpk.jpg" width="400px">
 
 
 
