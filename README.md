@@ -198,7 +198,7 @@ $a=0.7$, $L_{white}=2.0$, $\delta=0.0000001$
  
 | Method | Global | Mantiuk | Drago | Reinhard |
 | -------- | -------- | -------- | -------- | -------- |
-| Debevec  | <img src="https://i.imgur.com/pdvcera.jpg" alt="" width="110">  | <img src="https://i.imgur.com/C8dd9mM.jpg" alt="" width="150">  | <img src="https://i.imgur.com/5cfrlDq.jpg" alt="" width="150">  | <img src="https://i.imgur.com/vO4sgVi.jpg" alt="" width="150">    |
+| Debevec  | <img src="https://i.imgur.com/pdvcera.jpg" alt="" width="150">  | <img src="https://i.imgur.com/C8dd9mM.jpg" alt="" width="150">  | <img src="https://i.imgur.com/5cfrlDq.jpg" alt="" width="150">  | <img src="https://i.imgur.com/vO4sgVi.jpg" alt="" width="150">    |
 | Robertson | 123 <img src="" alt="" width="150">  | <img src="https://i.imgur.com/UUUALLK.jpg" alt="" width="150">  | <img src="https://i.imgur.com/LaRfTek.jpg" alt="" width="150">  | <img src="https://i.imgur.com/QiRHABN.jpg" alt="" width="150">    |
 
 ## 6 Summary
