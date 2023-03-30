@@ -37,7 +37,7 @@ if __name__ == "__main__":
     parser.add_argument('-d','--tonemap_Drago', default = True)
     ## Tonemap global
     parser.add_argument('-a', default = 0.7, type=float)
-    parser.add_argument('-l_white', default = 1.5, type=float)
+    parser.add_argument('-l_white', default = 2.0, type=float)
 
     args = parser.parse_args()
 
