@@ -36,8 +36,8 @@ if __name__ == "__main__":
     parser.add_argument('-r','--tonemap_Reinhard', default = True)
     parser.add_argument('-d','--tonemap_Drago', default = True)
     ## Tonemap global
-    parser.add_argument('-a', default = 0.7, type=float)
-    parser.add_argument('-l_white', default = 2.0, type=float)
+    parser.add_argument('-a', default = 0.9, type=float)
+    parser.add_argument('-l_white', default = 4.0, type=float)
 
     args = parser.parse_args()
 
@@ -53,7 +53,12 @@ if __name__ == "__main__":
     if args.hdr_method == 'Robertson':
         print("Run Robertson")
         hdr = Robertson.run_Robertson(images, ln_exposure_times, args.data_name, args.hdr_method)
-    
+        # if args.data_name == 'corridor':
+        #     hdr = cv2.imread("./result_Robertson_corridor/corridor.hdr", flags=cv2.IMREAD_ANYDEPTH)
+        # if args.data_name == 'grass':
+        #     hdr = cv2.imread("./result_Robertson_grass/grass.hdr", flags=cv2.IMREAD_ANYDEPTH)
+   
+
     tonemap(args, hdr)
 
 
