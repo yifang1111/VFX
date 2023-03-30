@@ -47,7 +47,7 @@
 
 我們實做了兩種方法：Debevec 和 Robertson.
 
-### (1) MTB Alignment **（加分）**
+### **(1) MTB Alignment （加分）**
 **Introduction:**
 1. 先將圖片轉成灰階
 2. 取第一張圖片作為校正參考點，每次取兩張照片依序做 alignment
@@ -101,7 +101,7 @@ $$\ln E_i = \frac{\sum\limits_{j=1}^P w(Z_{i,j}) (g(Z_{i,j})- \ln \triangle  t_j
 
 
 
-#### (b) Robertson's method **（加分）**
+#### **(b) Robertson's method （加分）**
 **Introduction:**
 對 Response curve $g$ 沒有任何假設，並且取照片中所有的點作為 Sample $Z$。
 
