@@ -2,8 +2,44 @@ import cv2
 import numpy as np
 import os
 
-def globalTonemap(img, l):
-    return cv2.pow(img/255., 1.0/l)
+
+def compute_lm(lw,a, sigma):
+    lw_bar = np.exp(np.average(np.log(sigma+lw)))
+    lm = a*(lw)/lw_bar
+    return lm
+
+def globalTonemap(hdr_image, a=10, sigma=0.0000001, l_white=1.5):
+    ## l_white: 設定超過即過曝的數值
+    lw = hdr_image
+    lm = compute_lm(lw, a, sigma)
+    print( np.min(lm)  )
+    print( np.max(lm)  )
+    #print( np.min(1 + ((lm) / (l_white)**2 )))
+    #print( np.max(1 + ((lm) / (l_white)**2 )))
+    
+    numerator = lm * (1 + lm/(l_white)**2) 
+    denominator = 1 + lm
+    ld = numerator / denominator
+    print(np.max(ld))
+    ldr = (ld * 255).astype(int)
+    return ldr
+
+# def get_lm(lw,a, sigma):
+#     lw_bar = np.exp(np.average(np.log(sigma+lw)))
+#     lm = a*(lw)/lw_bar
+#     return lm
+
+# def get_ld_global(lm,l_white):
+#     return lm * (1 + ((lm) / (l_white) / (l_white))) / (1 + lm)
+
+# def globalTonemap(hdr_image, a=1, sigma=0.0000001, l_white=1.5):
+#     lw = hdr_image
+#     lm = get_lm(lw, a, sigma)
+#     # ld = get_ld_global(lm, l_white)
+#     ld = lm / (1 + lm)
+#     ldr = (ld * 255).astype(int)
+#     return ldr
+
 
 def tonemap(args,hdr_img):
     print("Run Tonemapping")
@@ -12,8 +48,9 @@ def tonemap(args,hdr_img):
 
     # Gamma tone mapping
     if args.tonemap_global:
-        Gamma = np.uint8(globalTonemap(hdr_img, args.gamma) * 255.)
-        cv2.imwrite(f'{prefix}/{args.data_name}_gamma_tomemapping.jpg', Gamma)
+        # Gamma = np.uint8(globalTonemap(hdr_img, args.gamma))
+        Global = np.uint8(globalTonemap(hdr_img))
+        cv2.imwrite(f'{prefix}/{args.data_name}_gamma_tomemapping.jpg', Global)
 
     # Mantiuk tone mapping
     if args.tonemap_Mantiuk:
