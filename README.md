@@ -203,7 +203,7 @@ $a=0.9$, $L_{white}=4.0$, $\delta=0.0000001$
 | Robertson | <img src="https://i.imgur.com/EI5T9vo.jpg" alt="" width="150">  | <img src="https://i.imgur.com/UUUALLK.jpg" alt="" width="150">  | <img src="https://i.imgur.com/LaRfTek.jpg" alt="" width="150">  | <img src="https://i.imgur.com/QiRHABN.jpg" alt="" width="150">    |
 
 
-## 6. Summary
+## 5. Summary
 
 我們完成了以下work:
 - **（加分）** 實作 MTB algorithm
@@ -226,7 +226,7 @@ $a=0.9$, $L_{white}=4.0$, $\delta=0.0000001$
 
 
 
-## 7. Reproduce Steps
+## 6. Reproduce Steps
 1. Read https://www.csie.ntu.edu.tw/~cyy/courses/vfx/23spring/assignments/proj1/
 2. Know Paul Debevec's method from week 3.
 3. Download our images from [here]()
